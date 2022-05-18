@@ -1060,20 +1060,21 @@
 
 
 
-.lefthand{
+.grass1{
     animation: 3s ease-in-out infinite swing;
     transform-origin: center;
 }
 @keyframes swing {
 
     0%{
-        transform: rotate(0deg);
+        transform: rotate(0);
     }
     50%{
-        transform: rotate(5deg);
+        transform: rotate(2deg);
     }
     100%{
-        transform: rotate(0deg);
+        
+        transform: rotate(0);
     }
     
 }

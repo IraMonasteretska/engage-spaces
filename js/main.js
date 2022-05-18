@@ -22,7 +22,7 @@ $( function() {
     $('.btnup').click(function() {
         $('body, html').animate({
             scrollTop:0
-        });
+        }, 0);
     });
 
 
@@ -41,7 +41,10 @@ $( function() {
 
 
 //  ---- AOS animate --------- //
-AOS.init();
+AOS.init({
+  duration:800,
+  easing: 'ease-in-out'
+});
 
 
 
