@@ -33,6 +33,12 @@ $( function() {
         $('body').toggleClass('hidden');
     });
 
+    $('.mobile__link').click(function(){
+      $('.burger-btn').removeClass('active');
+      $('.mobile__menu').removeClass('active');
+      $('body').removeClass('hidden');
+  });
+
 
 
 
