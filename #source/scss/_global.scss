@@ -65,7 +65,8 @@ body {
     cursor: default;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    &.hidden{
+
+    &.hidden {
         overflow: hidden;
     }
 }
@@ -98,6 +99,27 @@ body {
 
     @media(max-width: 375px) {
         font-size: 24px;
+    }
+}
+
+@mixin bigtitle {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+    color: #0A2533;
+
+    @media(max-width: 1600px) {
+        font-size: 36px;
+    }
+
+    @media(max-width: 767.8px) {
+        font-size: 32px;
+    }
+
+    @media(max-width: 575.8px) {
+        font-size: 28px;
     }
 }
 
@@ -230,9 +252,10 @@ body {
 @media(max-width: 375px) {
     .pinkbtn {
         width: 100%;
+
         a,
-        span{
-            width: 93%!important;
+        span {
+            width: 93% !important;
         }
     }
 }

@@ -30,12 +30,6 @@
 }
 
 .welcomescreen__title {
-    font-style: italic;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 110%;
-    letter-spacing: -0.045em;
-    color: #0A2533;
     margin-bottom: 33px;
 
     span {
@@ -626,7 +620,6 @@
     }
 
     .welcomescreen__title {
-        font-size: 36px;
         margin-bottom: 25px;
     }
 
@@ -932,7 +925,6 @@
 
 @media(max-width: 767.8px) {
     .welcomescreen__title {
-        font-size: 32px;
         margin-bottom: 25px;
     }
 
@@ -985,7 +977,7 @@
     }
 
     .question {
-        padding: 40px 0 50px;
+        padding: 15px 0 50px;
     }
 
     .question__subtitle {
@@ -1029,7 +1021,6 @@
     }
 
     .welcomescreen__title {
-        font-size: 28px;
         margin-bottom: 25px;
     }
 
