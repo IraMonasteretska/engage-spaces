@@ -58,7 +58,6 @@ AOS.init({
 
 // ------- writing text -------------// 
 var str = $('#item').attr('data-text');
-console.log(str)
 
 if ($("*").is(".welcomescreen__subtitle")) {
     const carouselText = [
