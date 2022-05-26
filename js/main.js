@@ -39,6 +39,10 @@ $( function() {
       $('body').removeClass('hidden');
   });
 
+  //  ------- mobile sub menu ------ //
+  $('.mobile__submenu').click(function(){
+  $(this).find('ul').slideToggle("slow");
+  });
 
 
 
@@ -58,6 +62,7 @@ AOS.init({
 
 // ------- writing text -------------// 
 var str = $('#item').attr('data-text');
+console.log(str)
 
 if ($("*").is(".welcomescreen__subtitle")) {
     const carouselText = [
