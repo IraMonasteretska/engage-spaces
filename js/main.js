@@ -1,6 +1,16 @@
 
 $( function() {
 
+
+//  ----- mask ------ //
+  if ($(".phoneinp").length) {
+    $('.phoneinp').inputmask({
+        "mask": "+(999) 99 999 9999",
+        showMaskOnHover: false,
+        showMaskOnFocus: false,
+    });
+}
+
     // ------ accordeon ------- //
 
     $('.question__acordeon-header').click(function () {
