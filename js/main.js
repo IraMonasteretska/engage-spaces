@@ -42,6 +42,7 @@ $( function() {
   //  ------- mobile sub menu ------ //
   $('.mobile__submenu').click(function(){
   $(this).find('ul').slideToggle("slow");
+  $(this).toggleClass("pink");
   });
 
 
