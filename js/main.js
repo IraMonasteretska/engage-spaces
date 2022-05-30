@@ -62,22 +62,22 @@ $(function () {
 
 // -------------- scroll to box-switcher ---------- //
 
-// $(window).on('scroll', function () {
-//   var scrolltop = $(this).scrollTop();
-//   var h1 = $('.featureswelcomescreen').height();
-//   var h2 = $('.header').height();
-//   var h3 = $('.featurescontent__top').height();
-//   var hAll = ($('.featurescontent').height()) + 500;
-//   console.log(hAll)
-//   var topHeight = h1 + h2 + h3;
+$(window).on('scroll', function () {
+  var scrolltop = $(this).scrollTop();
+  var h1 = $('.featureswelcomescreen').height();
+  var h2 = $('.header').height();
+  var h3 = $('.featurescontent__top').height();
+  var hAll = ($('.featurescontent').height()) + 500;
+  console.log(hAll)
+  var topHeight = h1 + h2 + h3;
 
-//   if (scrolltop >= topHeight && scrolltop < hAll) {
-//     $('.featurescontent__box').addClass('fix');
-//   }
-//  else {
-//     $('.featurescontent__box').removeClass('fix');
-//   }
-// });
+  if (scrolltop >= topHeight && scrolltop < hAll) {
+    $('.featurescontent__box').addClass('fix');
+  }
+ else {
+    $('.featurescontent__box').removeClass('fix');
+  }
+});
 
 
 
