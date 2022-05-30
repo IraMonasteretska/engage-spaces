@@ -64,17 +64,14 @@ $(function () {
 
 $(window).on('scroll', function () {
   var scrolltop = $(this).scrollTop();
-  var h1 = $('.featureswelcomescreen').height();
-  var h2 = $('.header').height();
-  var h3 = $('.featurescontent__top').height();
-  var hAll = ($('.featurescontent').height()) + 500;
-  console.log(hAll)
-  var topHeight = h1 + h2 + h3;
+  var h1 = $('.featureswelcomescreen').outerHeight(true);
+  var h2 = $('.header').outerHeight(true);
+  var topHeight = h1 + h2;
 
-  if (scrolltop >= topHeight && scrolltop < hAll) {
+  if (scrolltop > topHeight) {
     $('.featurescontent__box').addClass('fix');
   }
- else {
+ if (scrolltop <= topHeight) {
     $('.featurescontent__box').removeClass('fix');
   }
 });
